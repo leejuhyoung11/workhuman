@@ -73,10 +73,10 @@ def aggregate_employee_data(data_dir: str = "data"):
         awards_list = []
         for _, row in emp_awards.iterrows():
             award_dict = {
-                'award_id': int(row['award_id']) if pd.notna(row['award_id']) else None,
+                # 'award_id': int(row['award_id']) if pd.notna(row['award_id']) else None,
                 'title': str(row['title']) if pd.notna(row['title']) else '',
                 'message': str(row['message']) if pd.notna(row['message']) else '',
-                'award_date': str(row['award_date']) if pd.notna(row['award_date']) else ''
+                # 'award_date': str(row['award_date']) if pd.notna(row['award_date']) else ''
             }
             awards_list.append(award_dict)
         

@@ -6,7 +6,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from src.data_preprocessor import aggregate_employee_data, split_train_data
 from src.data_loader import DataLoader
-# from src.workflows.prompt_chaining import PromptChainingWorkflow
+from src.workflows.prompt_chaining import PromptChainingWorkflow
 
 from sklearn.model_selection import train_test_split
 
@@ -40,20 +40,20 @@ def main():
     print("employe len " + str(len(employee_list)))
 
     # print("\nSample of train data (JSON):")
-    # print(json.dumps(employee_list[0], indent=2, ensure_ascii=False))
+    # print(json.dumps(employee_list[22], indent=2, ensure_ascii=False))
 
-    llm = ChatAnthropic(
-        model="claude-3-5-sonnet-latest",
-        temperature=0,
-        anthropic_api_key=anthropic_api_key
-    )
 
-    # workflow = PromptChainingWorkflow(llm)
+    model="claude-haiku-4-5-20251001"
+    temperature=0
+    anthropic_api_key=anthropic_api_key
 
-    # result = workflow.run(train_list)
+    workflow = PromptChainingWorkflow(model, temperature, anthropic_api_key)
 
-    # print(result["final_prediction"])
-    # print(result["final_reasoning"])
+
+    emp_id, result = workflow.extract_raw_keywords(employee_list[0])
+    print(f"summary of {emp_id}")
+    print(result)
+    
 
 
     
