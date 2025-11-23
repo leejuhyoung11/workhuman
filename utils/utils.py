@@ -103,6 +103,18 @@ def save_final_result(results, is_vp, folder: str = "output"):
     print(f"[Saved] {save_path}")
     return save_path
 
+def save_taxonomy(taxonomy, folder: str="output"):
+    folder_path = f"{folder}/rules"
+    os.makedirs(folder_path, exist_ok=True)
+
+    save_path = f"{folder_path}/canonical_taxonomy.json"
+
+    with open(save_path, "w", encoding="utf-8") as f:
+        json.dump(taxonomy, f, indent=2, ensure_ascii=False)
+
+    print(f"[Saved] {save_path}")
+    return save_path
+
 
 def parse_json_from_llm(text):
     clean = (

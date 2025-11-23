@@ -30,8 +30,10 @@ def aggregate_employee_data(data_dir: str = "data"):
 
     # Load raw data
     print("Loading raw data...")
-    control_df = pd.read_csv(data_path / "control copy.csv")
-    treatment_df = pd.read_csv(data_path / "treatment copy.csv")
+    # control_df = pd.read_csv(data_path / "control copy.csv")
+    # treatment_df = pd.read_csv(data_path / "treatment copy.csv")
+    control_df = pd.read_json(data_path / "control_clean.json")
+    treatment_df = pd.read_json(data_path / "treatment_clean.json")
     history_df = pd.read_csv(data_path / "wh_history_full.csv")
     
     # 1. Merge award data
@@ -74,7 +76,7 @@ def aggregate_employee_data(data_dir: str = "data"):
         for _, row in emp_awards.iterrows():
             award_dict = {
                 'title': str(row['title']) if pd.notna(row['title']) else '',
-                'message': str(row['message']) if pd.notna(row['message']) else '',
+                'message': str(row['text']) if pd.notna(row['text']) else str(row['message']),
             }
             awards_list.append(award_dict)
         

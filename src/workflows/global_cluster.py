@@ -1,9 +1,10 @@
 from typing import List, Dict, Any
+import json
 from concurrent.futures import ThreadPoolExecutor
 
 from src.models.provider_factory import LLMProviderFactory
 
-from utils.utils import parse_json_from_llm, save_final_result
+from utils.utils import parse_json_from_llm, save_final_result, save_taxonomy
 
 class GlobalCluster:
 
@@ -17,10 +18,10 @@ class GlobalCluster:
         )
     
     def dedupligate_signals(self, signal_list, is_vp):
-        
+        print(f"Deduplicating process...")
         prompt = self._build_deduplicate_prompt(signal_list)
         raw = self.llm.call(prompt)
-        print(" response:", raw)
+        # print(" response:", raw)
 
         try:
             parsed_json =  parse_json_from_llm(raw)
@@ -33,85 +34,104 @@ class GlobalCluster:
         return 
 
 
+    def generate_canonical_taxonomy(self, vp_path, non_vp_path):
+        with open(vp_path, "r", encoding="utf-8") as f:
+            vp = json.load(f)
+        with open(non_vp_path, "r", encoding="utf-8") as f:
+            non_vp = json.load(f)
+
+        seen = set()
+        taxonomy = {}
+
+        for name, content in vp.items():
+            if name in seen:
+                continue
+            seen.add(name)
+            taxonomy[name] = content.get("summary", "")
+
+        for name, content in non_vp.items():
+            if name in seen:
+                continue
+            seen.add(name)
+            taxonomy[name] = content.get("summary", "")
+
+        save_taxonomy(taxonomy)
+        
+        return taxonomy
 
 
     def _build_deduplicate_prompt(self, signal_list):
         return f"""
-            You will perform SEMANTIC DEDUPLICATION on a list of behavior cluster names.
+        You will perform **SEMANTIC DEDUPLICATION** on a list of behavior cluster names.
 
-            IMPORTANT:
-            - These cluster names were already created by a previous clustering process.
-            - Each name already represents a meaningful behavioral theme.
-            - Your task is NOT to re-cluster raw phrases.
-            - Your task is NOT to reinterpret employee-level behavior.
-            - You must ONLY merge cluster names that clearly represent the SAME meaning.
+        IMPORTANT:
+        - These names already represent meaningful behavioral themes.
+        - Your sole objective is **semantic consolidation**, NOT reinterpreting employees.
+        - You MUST reduce the total number of themes as much as reasonably possible.
 
-            Do NOT:
-            - generate new behavioral themes
-            - split an existing cluster name into multiple new themes
-            - infer seniority, rank, job level, or role type
-            - reinterpret underlying meanings that were not in the names
-            - create abstract or overly broad new categories
+        ===============================================================
+        GOAL — MINIMIZE the Number of Canonical Themes
+        ===============================================================
+        If two names show ANY meaningful conceptual overlap, even partial overlap:
+        - You MUST merge them.
+        - When uncertain, ALWAYS merge rather than separate.
+        - Do NOT leave similar clusters as separate.
 
-            You are strictly doing *semantic name consolidation*.
+        Treat the following as equivalent:
+        - wording differences (“leadership” vs “leading”)
+        - scope variations (“program” vs “initiative”)
+        - level of detail differences (“planning & vision” vs “strategic planning”)
+        - domain focus variations (“team”, “cross-team”, “cross-functional”)
 
-            ===============================================================
-            STEP 1 — Understand the Input
-            ===============================================================
-            You are given a list of cluster names such as:
-            - "Cross-functional Leadership"
-            - "Leadership Across Teams"
-            - "Cross-Team Influence"
-            - "Team Coordination Leadership"
+        ===============================================================
+        STEP 1 — Deduplication Rules (STRONG)
+        ===============================================================
+        You MUST merge names together if they share ANY of:
+        - similar strategic intent
+        - overlapping leadership concepts
+        - related planning or influence ideas
+        - related execution themes
+        - similar communication concepts
+        - similar customer or stakeholder concepts
 
-            These names may differ in wording but express similar concepts.
-            Your job is to identify which names should be merged together.
+        Do NOT:
+        - generate new themes
+        - broaden meaning beyond what aliases share
+        - split a theme into sub-themes
+        - keep names separate unless their meanings are CLEARLY different
 
-            ===============================================================
-            STEP 2 — Semantic Deduplication Rules
-            ===============================================================
-            For any set of names that express the same behavioral idea:
-            1. Group them together.
-            2. Select ONE canonical (representative) name.
-            - Must be the clearest and simplest expression of the theme.
-            - Should NOT be more abstract or broader than the originals.
-            3. Store all original names under an "aliases" list.
+        ===============================================================
+        STEP 2 — Canonical Name Selection
+        ===============================================================
+        For each merged group:
+        - Select ONE canonical name.
+        - Choose the MOST GENERAL name that still captures all aliases.
+        - Avoid overly specific words.
+        - Avoid obscure or narrow names.
 
-            Important rules:
-            - Merge ONLY if the meanings clearly match.
-            - If a name is unique, keep it as its own canonical cluster.
-            - Do NOT force a name into a group if the match is weak.
-            - If two names overlap partially but are not conceptually identical, keep them separate.
+        ===============================================================
+        STEP 3 — Canonical Summary
+        ===============================================================
+        Write a neutral 1–2 sentence summary capturing ONLY the meaning shared by all aliases.
 
-            ===============================================================
-            STEP 3 — Provide a Canonical Summary
-            ===============================================================
-            For each canonical cluster:
-            Write a short 1–2 sentence summary explaining the core behavioral concept.
-            This summary should:
-            - describe the underlying competency
-            - be neutral (no seniority inference)
-            - reflect only the meaning shared by the aliases
+        ===============================================================
+        STEP 4 — Output Format (JSON ONLY)
+        ===============================================================
+        {{
+        "<canonical_name>": {{
+            "aliases": ["..."],
+            "summary": "..."
+        }}
+        }}
 
-            ===============================================================
-            STEP 4 — Output Format (JSON Only)
-            ===============================================================
-            Return a single JSON object in the format:
-
-            {{
-            "<canonical_name>": {{
-                "aliases": ["name1", "name2", "name3"],
-                "summary": "1–2 sentence explanation of the shared meaning."
-            }},
-            ...
-            }}
-
-            Do NOT output anything outside of the JSON object.
-
-            ===============================================================
-            NOW DEDUPLICATE THE FOLLOWING CLUSTER NAMES:
-            ===============================================================
-            {signal_list}    
+        Return ONLY a JSON object.
+        DO NOT include any text before or after the JSON.
+        DO NOT include summaries, bullet points, or explanations.
+        If you output anything outside JSON, the system will fail.
+        ===============================================================
+        NOW DEDUPLICATE THE FOLLOWING NAMES:
+        ===============================================================
+        {signal_list}
             """
 
     

@@ -41,7 +41,7 @@ def main():
     # print("Data Preprocessing")
     # print("="*60)
     # employee_list = aggregate_employee_data(data_dir="data")
-    
+    # print(employee_list)
     
 
     # for e in tqdm(employee_list[23:]):
@@ -56,7 +56,8 @@ def main():
 
     global_cluster.dedupligate_signals(non_vp_patterns, False)
     global_cluster.dedupligate_signals(vp_patterns, True)
-
+    canonical_taxonomy = global_cluster.generate_canonical_taxonomy(vp_path='./output/True/pattern_results.json', non_vp_path='./output/False/pattern_results.json')
+    print(canonical_taxonomy)
 
     
 if __name__ == "__main__":

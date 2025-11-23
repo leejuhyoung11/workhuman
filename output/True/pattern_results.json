@@ -1,188 +1,122 @@
 {
-  "Cross-Functional Leadership": {
-    "aliases": [
-      "Cross-Functional Leadership",
-      "Cross-Functional Leadership & Coordination",
-      "Cross-Functional Leadership & Collaboration"
-    ],
-    "summary": "Ability to lead, coordinate, and collaborate effectively across different functional areas and teams."
-  },
   "Strategic Leadership & Vision": {
     "aliases": [
-      "Strategic Leadership & Vision",
+      "Strategic Vision & Planning",
+      "Strategic Decision-Making & Guidance",
       "Strategic Thinking & Planning",
       "Strategic Planning & Vision",
-      "Strategic Vision & Planning",
-      "Strategic Thinking & Problem-Solving"
+      "Strategic Leadership & Vision",
+      "Strategic Thinking & Problem-Solving",
+      "Research & Strategic Preparation"
     ],
-    "summary": "Capacity to develop long-term strategic direction, think systemically about organizational goals, and guide planning efforts."
+    "summary": "Ability to develop long-term strategic direction, make informed decisions, and provide forward-looking guidance aligned with organizational goals."
   },
-  "Stakeholder Leadership & Influence": {
+  "Execution & Delivery Excellence": {
     "aliases": [
-      "Stakeholder Leadership & Influence",
-      "Stakeholder & Relationship Management",
-      "Stakeholder Influence & Communication",
-      "Stakeholder Influence & Alignment",
-      "Executive Influence & Stakeholder Engagement"
-    ],
-    "summary": "Ability to build relationships, influence, and align stakeholders across organizational boundaries."
-  },
-  "Crisis & Change Leadership": {
-    "aliases": [
-      "Crisis Leadership & Resilience",
-      "Crisis & Change Leadership",
-      "Agile & Adaptive Leadership"
-    ],
-    "summary": "Capacity to lead effectively during periods of disruption, manage organizational change, and maintain resilience under pressure."
-  },
-  "Execution Excellence": {
-    "aliases": [
-      "Execution & Delivery Excellence",
+      "Execution Excellence",
       "Execution Excellence & Delivery",
-      "Execution Excellence"
+      "Execution & Delivery Excellence",
+      "Operational Performance & Optimization",
+      "Process & Operational Excellence"
     ],
-    "summary": "Ability to deliver results consistently and manage projects or initiatives to completion with high quality."
+    "summary": "Capability to drive results through effective execution, optimize operations, and deliver high-quality outcomes consistently."
+  },
+  "Cross-Functional Leadership & Collaboration": {
+    "aliases": [
+      "Cross-Functional Leadership & Coordination",
+      "Cross-Functional Leadership",
+      "Cross-Functional Leadership & Collaboration",
+      "Team Integration & Collaboration",
+      "Organizational Coordination & Responsiveness"
+    ],
+    "summary": "Ability to lead and coordinate across teams and departments, fostering collaboration and alignment toward shared objectives."
+  },
+  "People Development & Empowerment": {
+    "aliases": [
+      "People Development & Empowerment",
+      "People Development & Mentorship",
+      "Organizational Leadership & Culture"
+    ],
+    "summary": "Commitment to developing talent, mentoring others, and building a strong organizational culture through empowerment."
+  },
+  "Change & Adaptability Leadership": {
+    "aliases": [
+      "Crisis & Change Leadership",
+      "Organizational Transformation & Change",
+      "Agile & Adaptive Leadership",
+      "Crisis Leadership & Resilience",
+      "Problem-Solving & Adaptability"
+    ],
+    "summary": "Capacity to lead through change, navigate crises, adapt to new circumstances, and drive organizational transformation."
+  },
+  "Stakeholder Influence & Engagement": {
+    "aliases": [
+      "Executive Influence & Stakeholder Engagement",
+      "Stakeholder Influence & Alignment",
+      "Stakeholder Leadership & Influence",
+      "Stakeholder Influence & Communication",
+      "Stakeholder & Relationship Management",
+      "Strategic Negotiation & Coordination"
+    ],
+    "summary": "Skill in building relationships, influencing stakeholders, and aligning diverse parties toward common goals."
+  },
+  "Customer & Client Partnership": {
+    "aliases": [
+      "Customer-Centric Leadership",
+      "Customer Partnership & Growth",
+      "Client Partnership Leadership",
+      "Client & Vendor Relationship Leadership",
+      "Market & Sales Alignment"
+    ],
+    "summary": "Focus on building strong customer and client relationships, driving growth, and ensuring customer-centric decision-making."
   },
   "Innovation & Process Leadership": {
     "aliases": [
       "Innovation & Process Leadership",
       "Innovation & Adoption",
-      "Complex Problem-Solving & Innovation"
+      "Complex Problem-Solving & Innovation",
+      "Design Lab Leadership"
     ],
-    "summary": "Capacity to drive innovation, improve processes, and solve complex problems through new approaches."
+    "summary": "Ability to drive innovation, solve complex problems, and lead adoption of new processes and methodologies."
   },
-  "People Development & Mentorship": {
+  "Program & Initiative Leadership": {
     "aliases": [
-      "People Development & Mentorship",
-      "People Development & Empowerment"
-    ],
-    "summary": "Ability to develop, mentor, and empower team members to grow and succeed."
-  },
-  "Organizational Leadership & Culture": {
-    "aliases": [
-      "Organizational Leadership & Culture",
-      "Organizational Transformation & Change",
-      "Organizational Impact",
-      "Organizational Impact & Influence"
-    ],
-    "summary": "Capacity to shape organizational culture, drive transformation, and create meaningful organizational impact."
-  },
-  "Strategic Communication & Presence": {
-    "aliases": [
-      "Strategic Communication & Presence",
-      "Thought Leadership & Communication",
-      "Brand & Communications Leadership"
-    ],
-    "summary": "Ability to communicate strategically, establish thought leadership, and project professional presence."
-  },
-  "Customer-Centric Leadership": {
-    "aliases": [
-      "Customer-Centric Leadership",
-      "Customer Partnership & Growth",
-      "Client Partnership Leadership",
-      "Client & Vendor Relationship Leadership"
-    ],
-    "summary": "Commitment to understanding customer needs, building partnerships, and driving customer-focused growth."
-  },
-  "Operational Performance & Optimization": {
-    "aliases": [
-      "Operational Performance & Optimization",
-      "Process & Operational Excellence",
-      "Organizational Coordination & Responsiveness"
-    ],
-    "summary": "Ability to optimize operations, improve efficiency, and ensure responsive organizational coordination."
-  },
-  "Problem-Solving & Adaptability": {
-    "aliases": [
-      "Problem-Solving & Adaptability"
-    ],
-    "summary": "Capacity to address challenges flexibly and adapt approaches based on changing circumstances."
-  },
-  "Research & Strategic Preparation": {
-    "aliases": [
-      "Research & Strategic Preparation"
-    ],
-    "summary": "Ability to conduct thorough research and prepare strategically for initiatives and decisions."
-  },
-  "Site & Program Leadership": {
-    "aliases": [
+      "Program & Initiative Leadership",
       "Site & Program Leadership",
-      "Program & Initiative Leadership"
+      "Project & Initiative Ownership"
     ],
-    "summary": "Capacity to lead specific programs, initiatives, or site-based operations."
+    "summary": "Capacity to own and lead programs, initiatives, and projects from conception through successful delivery."
   },
-  "Vendor & Contract Leadership": {
+  "Organizational Impact & Influence": {
     "aliases": [
-      "Vendor & Contract Leadership"
+      "Organizational Impact",
+      "Organizational Impact & Influence",
+      "Business Growth & Market Leadership"
     ],
-    "summary": "Ability to manage vendor relationships and oversee contract negotiations and compliance."
+    "summary": "Ability to create meaningful organizational impact, drive business growth, and establish market leadership."
   },
   "Technical Expertise & Guidance": {
     "aliases": [
       "Technical Expertise & Guidance"
     ],
-    "summary": "Capacity to provide technical knowledge and guidance to support organizational objectives."
-  },
-  "Pressure & Performance Management": {
-    "aliases": [
-      "Pressure & Performance Management",
-      "Risk & Pressure Management"
-    ],
-    "summary": "Ability to manage performance and navigate high-pressure situations while mitigating risks."
-  },
-  "Audit & Governance Leadership": {
-    "aliases": [
-      "Audit & Governance Leadership"
-    ],
-    "summary": "Capacity to lead audit functions and ensure organizational governance and compliance."
+    "summary": "Demonstrated mastery of technical domains and ability to provide expert guidance to others."
   },
   "Professional Excellence & Presence": {
     "aliases": [
-      "Professional Excellence & Presence"
+      "Professional Excellence & Presence",
+      "Thought Leadership & Communication",
+      "Strategic Communication & Presence"
     ],
-    "summary": "Commitment to maintaining high professional standards and demonstrating credible presence."
+    "summary": "Ability to communicate effectively, establish thought leadership, and project professional credibility and presence."
   },
-  "Design Lab Leadership": {
+  "Risk & Performance Management": {
     "aliases": [
-      "Design Lab Leadership"
+      "Risk & Pressure Management",
+      "Pressure & Performance Management",
+      "Financial & Budget Stewardship",
+      "Audit & Governance Leadership",
+      "Vendor & Contract Leadership"
     ],
-    "summary": "Ability to lead design-focused initiatives and innovation labs."
-  },
-  "Strategic Negotiation & Coordination": {
-    "aliases": [
-      "Strategic Negotiation & Coordination"
-    ],
-    "summary": "Capacity to negotiate effectively and coordinate complex initiatives across parties."
-  },
-  "Financial & Budget Stewardship": {
-    "aliases": [
-      "Financial & Budget Stewardship"
-    ],
-    "summary": "Ability to manage financial resources responsibly and oversee budgetary decisions."
-  },
-  "Team Integration & Collaboration": {
-    "aliases": [
-      "Team Integration & Collaboration"
-    ],
-    "summary": "Capacity to integrate team members and foster collaborative working relationships."
-  },
-  "Strategic Decision-Making & Guidance": {
-    "aliases": [
-      "Strategic Decision-Making & Guidance"
-    ],
-    "summary": "Ability to make sound strategic decisions and provide guidance on complex matters."
-  },
-  "Market & Sales Alignment": {
-    "aliases": [
-      "Market & Sales Alignment",
-      "Business Growth & Market Leadership"
-    ],
-    "summary": "Capacity to align market and sales efforts to drive business growth."
-  },
-  "Project & Initiative Ownership": {
-    "aliases": [
-      "Project & Initiative Ownership"
-    ],
-    "summary": "Ability to take ownership of projects and initiatives from conception through completion."
+    "summary": "Capability to manage risk, handle pressure, oversee financial stewardship, and ensure compliance and governance."
   }
 }
