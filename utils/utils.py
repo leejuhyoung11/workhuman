@@ -1,13 +1,13 @@
+import signal
 import tiktoken
 import os, json
+from dotenv import load_dotenv
 
+load_dotenv()
 enc = tiktoken.get_encoding("cl100k_base")
+CONFIG_PATH = "./config/llm_providers.json"
 
-def chunk_awards(rec_id, awards_list, max_tokens=1500):
-    """
-    awards_list: [{'title': ..., 'message': ...}, ...]
-    returns: list of text chunks
-    """
+def chunk_awards(rec_id, awards_list, max_tokens=40000):
     chunks = []
     current_chunk = ""
     current_tokens = 0
@@ -56,10 +56,22 @@ def save_chunks(employee_id, chunks, output_dir="output"):
     return file_path
 
 
-def save_employee_keywords(rec_id: int, results: dict, folder: str = "output"):
+def save_employee_signals(rec_id: int, results: dict, folder: str = "output"):
     os.makedirs(folder, exist_ok=True)
 
     save_path = f"{folder}/employee_{rec_id}_keywords.json"
+
+    with open(save_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+
+    print(f"[Saved] {save_path}")
+    return save_path
+
+def save_clustering_result(rec_id: int, results, is_vp, folder: str = "output"):
+    folder_path = f"{folder}/{is_vp}"
+    os.makedirs(folder_path, exist_ok=True)
+
+    save_path = f"{folder_path}/employee_{rec_id}_clustering_result.json"
 
     with open(save_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
@@ -75,3 +87,67 @@ def parse_json_from_llm(text):
             .strip()
     )
     return json.loads(clean)
+
+def extract_phrase_set(signal_json):
+    phrases = []
+
+    for award in signal_json.values():
+        for group in award.values():
+            phrases.extend(group)
+
+    return list(set(phrases)) 
+
+def merge_signal_set(folder):
+    if not os.path.exists(folder):
+        print(f"[WARN] Folder not found: {folder}")
+        return set()
+
+    if not os.path.isdir(folder):
+        print(f"[WARN] '{folder}' is not a directory.")
+        return set()
+
+    signal_set = set()
+
+    for fname in os.listdir(folder):
+        if not fname.endswith(".json"):
+            continue
+        fpath = os.path.join(folder, fname)
+        try:
+            with open(fpath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception as e:
+            print(f"[WARN] Failed to read JSON: {fpath} ({e})")
+            continue
+        pattern_list = list(data.keys())
+        signal_set.update(pattern_list)
+
+    return list(signal_set)
+    
+
+
+
+def load_provider_settings(provider: str):
+    provider = provider.lower()
+
+    with open(CONFIG_PATH, "r") as f:
+        cfg = json.load(f)
+
+    if provider not in cfg:
+        raise ValueError(f"No provider config for '{provider}'")
+
+    block = cfg[provider]
+
+    # Build env var: OPENAI_API_KEY / ANTHROPIC_API_KEY / GEMINI_API_KEY
+    env_var = f"{provider.upper()}_API_KEY"
+    api_key = os.environ.get(env_var)
+
+    if not api_key:
+        raise EnvironmentError(f"Missing environment variable: {env_var}")
+
+    return {
+        "provider": provider,
+        "model": block["model"],
+        "temperature": block["temperature"],
+        "max_tokens": block["max_tokens"],
+        "api_key": api_key
+    }

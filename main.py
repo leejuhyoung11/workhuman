@@ -1,61 +1,62 @@
-"""Main entry point for VP promotion prediction experiment"""
 
 import os, json
+from tqdm import tqdm
 import sys
 import pandas as pd
 from dotenv import load_dotenv
 from src.data_preprocessor import aggregate_employee_data, split_train_data
-from src.data_loader import DataLoader
-from src.workflows.prompt_chaining import PromptChainingWorkflow
+from src.workflows.employee_cluster import EmployeeCluster
+from src.workflows.global_cluster import GlobalCluster
 
-from sklearn.model_selection import train_test_split
+from utils.utils import extract_phrase_set, load_provider_settings, merge_signal_set
 
-from langchain_anthropic import ChatAnthropic
-from langchain_core.prompts import ChatPromptTemplate
+# load_dotenv()
 
+def setup_employee_cluster(provider_name: str):
+    cfg = load_provider_settings(provider_name)
 
-load_dotenv()
+    return EmployeeCluster(
+        provider=cfg["provider"],
+        model=cfg["model"],
+        temperature=cfg["temperature"],
+        api_key=cfg["api_key"]
+    )
 
+def setup_global_cluster(provider_name: str):
+    cfg = load_provider_settings(provider_name)
 
-
+    return GlobalCluster(
+        provider=cfg["provider"],
+        model=cfg["model"],
+        temperature=cfg["temperature"],
+        api_key=cfg["api_key"]
+    )
 
 def main():
-    """Main function"""
     
-    
-    # Check API key
-    anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
-    if not anthropic_api_key:
-        print("Error: ANTHROPIC_API_KEY not found!")
-        print("Please set it in .env file")
-        return
-    
-    # Preprocess
+    employee_cluster = setup_employee_cluster("anthropic")
+
     print("="*60)
     print("Data Preprocessing")
     print("="*60)
     employee_list = aggregate_employee_data(data_dir="data")
     
     
-    print("employe len " + str(len(employee_list)))
 
-    # print("\nSample of train data (JSON):")
-    # print(json.dumps(employee_list[22], indent=2, ensure_ascii=False))
+    for e in tqdm(employee_list):
+        emp_id, result, is_vp = employee_cluster.extract_raw_signals(e)
+        signal_set = extract_phrase_set(result)
+        employee_cluster.clustering_signal(emp_id, signal_set, is_vp)
 
+    
+    # Merge Pattern results by vp flag
+    non_vp_patterns = merge_signal_set("./output/False")
+    vp_patterns = merge_signal_set("./output/True")
 
-    model="claude-haiku-4-5-20251001"
-    temperature=0
-    anthropic_api_key=anthropic_api_key
-
-    workflow = PromptChainingWorkflow(model, temperature, anthropic_api_key)
-
-
-    emp_id, result = workflow.extract_raw_keywords(employee_list[0])
-    print(f"summary of {emp_id}")
-    print(result)
     
 
 
     
 if __name__ == "__main__":
+    
     main()

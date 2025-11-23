@@ -37,7 +37,7 @@ def aggregate_employee_data(data_dir: str = "data"):
     # 1. Merge award data
     print("1. Merging award data (control + treatment)...")
     award_df = pd.concat([control_df, treatment_df], ignore_index=True)
-    print(f"   Total awards: {len(award_df)}")
+   
     
     # 2. Create VP labels from history
     print("2. Creating VP labels from history...")
@@ -49,7 +49,7 @@ def aggregate_employee_data(data_dir: str = "data"):
         .max()
         .reset_index()
     )
-    print(f"   VP employees: {label_df['is_vp'].sum()} / {len(label_df)}")
+    
     
     # 3. Merge labels to award data
     print("3. Merging labels to award data...")
@@ -60,7 +60,7 @@ def aggregate_employee_data(data_dir: str = "data"):
         how='left'
     )
     merged_df['is_vp'] = merged_df['is_vp'].fillna(False).astype(bool)
-    print(f"   Merged records: {len(merged_df)}")
+    
     
     # 4. Aggregate by employee
     print("4. Aggregating by employee...")
@@ -73,10 +73,8 @@ def aggregate_employee_data(data_dir: str = "data"):
         awards_list = []
         for _, row in emp_awards.iterrows():
             award_dict = {
-                # 'award_id': int(row['award_id']) if pd.notna(row['award_id']) else None,
                 'title': str(row['title']) if pd.notna(row['title']) else '',
                 'message': str(row['message']) if pd.notna(row['message']) else '',
-                # 'award_date': str(row['award_date']) if pd.notna(row['award_date']) else ''
             }
             awards_list.append(award_dict)
         
