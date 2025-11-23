@@ -1,0 +1,378 @@
+{
+  "Strategic Planning & Vision": {
+    "aliases": [
+      "Strategic Planning & Market Leadership",
+      "Strategic Planning & Preparation",
+      "Strategic Planning & Problem-Solving",
+      "Strategic Thinking & Decision-Making",
+      "Strategic Thinking & Planning",
+      "Strategic Planning & Vision",
+      "Strategic Planning & Vision Execution",
+      "Strategic Planning & Direction",
+      "Strategic Vision & Planning"
+    ],
+    "summary": "The ability to develop forward-looking plans, set strategic direction, and prepare for future opportunities and challenges."
+  },
+  "Strategic Problem-Solving & Innovation": {
+    "aliases": [
+      "Strategic Problem-Solving",
+      "Strategic Problem-Solving & Innovation",
+      "Problem-Solving & Innovation",
+      "Complex Problem-Solving & Execution",
+      "Complex Problem-Solving",
+      "Complex Problem-Solving & Navigation",
+      "Decision-Making & Problem-Solving",
+      "Execution & Problem-Solving",
+      "Complex Execution & Problem-Solving",
+      "Creative Innovation & Problem-Solving",
+      "Innovation & Problem-Solving"
+    ],
+    "summary": "The capacity to analyze complex challenges, develop innovative solutions, and execute decisions effectively."
+  },
+  "Strategic Communication & Influence": {
+    "aliases": [
+      "Strategic Communication & Narrative",
+      "Strategic Communication & Presence",
+      "Strategic Communication & Insight",
+      "Strategic Communication & Influence",
+      "Strategic Communication & Messaging",
+      "Strategic Communication & Storytelling",
+      "Stakeholder Influence & Communication",
+      "Stakeholder Influence & Engagement",
+      "Stakeholder Influence & Alignment",
+      "Stakeholder Engagement & Influence"
+    ],
+    "summary": "The ability to communicate strategically, craft compelling narratives, and influence stakeholders through clear messaging."
+  },
+  "Stakeholder Leadership & Alignment": {
+    "aliases": [
+      "Stakeholder Leadership",
+      "Stakeholder Alignment & Coordination",
+      "Stakeholder Alignment & Engagement",
+      "Stakeholder Alignment & Influence",
+      "Stakeholder Coordination & Alignment",
+      "Stakeholder & Partnership Leadership",
+      "Stakeholder Leadership & Influence",
+      "Stakeholder & Executive Influence",
+      "Stakeholder & Client Influence",
+      "Stakeholder & Vendor Management"
+    ],
+    "summary": "The capacity to align diverse stakeholders, coordinate across groups, and lead through influence and engagement."
+  },
+  "Cross-Functional Leadership & Collaboration": {
+    "aliases": [
+      "Cross-Functional Leadership",
+      "Cross-functional Leadership",
+      "Cross-Functional Leadership & Orchestration",
+      "Cross-Functional Leadership & Collaboration",
+      "Cross-Functional Leadership & Coordination",
+      "Cross-Functional Leadership & Execution",
+      "Cross-Functional Collaboration & Alignment",
+      "Collaborative Leadership",
+      "Collaborative Partnership & Teamwork",
+      "Collaborative Leadership & Culture"
+    ],
+    "summary": "The ability to lead and coordinate across functional boundaries, fostering collaboration and alignment among diverse teams."
+  },
+  "Organizational Change & Transformation": {
+    "aliases": [
+      "Organizational Change & Impact",
+      "Organizational Change & Design",
+      "Organizational Transformation",
+      "Organizational Transformation & Impact",
+      "Change & Crisis Leadership"
+    ],
+    "summary": "The capacity to lead organizational change initiatives, design transformation efforts, and drive impact through structural or cultural shifts."
+  },
+  "Organizational Impact & Growth": {
+    "aliases": [
+      "Organizational Impact",
+      "Organizational Impact & Growth",
+      "Organizational Impact & Scaling",
+      "Organizational Impact & Vision",
+      "Organizational Impact & Strategic Influence",
+      "Business Growth & Impact",
+      "Market & Business Impact",
+      "Regional & Commercial Growth",
+      "Strategic Growth & Opportunity Creation",
+      "Innovation & Growth Leadership"
+    ],
+    "summary": "The ability to drive organizational and business growth, create strategic impact, and scale operations effectively."
+  },
+  "Operational Excellence & Process Leadership": {
+    "aliases": [
+      "Organizational Optimization & Operations",
+      "Execution Excellence & Operational Leadership",
+      "Process & Operational Excellence",
+      "Process & Continuous Improvement Leadership",
+      "Infrastructure & Operations Leadership",
+      "Operational Excellence & Ownership",
+      "Operational Excellence & Process Leadership",
+      "Operational Excellence & Process",
+      "Operational Excellence",
+      "Business Acumen & Operational Excellence"
+    ],
+    "summary": "The capacity to optimize processes, drive operational efficiency, and lead continuous improvement initiatives."
+  },
+  "Execution Excellence & Accountability": {
+    "aliases": [
+      "Execution Excellence",
+      "Execution Excellence & Delivery",
+      "Execution Ownership",
+      "Execution & Accountability",
+      "Execution & Delivery Excellence",
+      "Execution & Project Leadership",
+      "Strategic Execution & Ownership",
+      "Strategic Initiative Ownership",
+      "Team Mobilization & Execution",
+      "Launch Leadership & Execution"
+    ],
+    "summary": "The ability to execute plans effectively, take ownership of outcomes, and deliver results with accountability."
+  },
+  "Crisis & Adaptive Leadership": {
+    "aliases": [
+      "Crisis & Adaptive Leadership",
+      "Crisis & High-Pressure Leadership",
+      "Crisis & Risk Leadership",
+      "Crisis & Urgent Problem Resolution",
+      "Crisis & High-Stakes Leadership"
+    ],
+    "summary": "The capacity to lead effectively under pressure, adapt to crises, and navigate high-stakes situations with resilience."
+  },
+  "Resilience & Perseverance": {
+    "aliases": [
+      "Resilience & Ethical Leadership",
+      "Adaptability & Resilience",
+      "Resilience & Persistence",
+      "Resilience & Steady Leadership",
+      "Resilience & Perseverance",
+      "Leadership Presence & Resilience",
+      "Organizational Excellence & Resilience"
+    ],
+    "summary": "The ability to maintain composure, persist through challenges, and demonstrate steady leadership under adversity."
+  },
+  "People Development & Leadership": {
+    "aliases": [
+      "People Development & Leadership",
+      "People Development & Mentorship",
+      "People Development & Knowledge Transfer",
+      "People Development & Coaching",
+      "People Development & Team Leadership",
+      "People Development & Culture",
+      "People Development & Culture Leadership",
+      "People Development & Empowerment",
+      "People Development",
+      "Team Development & Empowerment"
+    ],
+    "summary": "The capacity to develop team members, mentor others, and foster a culture of growth and empowerment."
+  },
+  "Team Leadership & Engagement": {
+    "aliases": [
+      "Team Leadership & Engagement",
+      "Team Leadership & Accountability",
+      "Organizational & Cultural Leadership"
+    ],
+    "summary": "The ability to lead teams effectively, foster engagement, and build accountability within organizational culture."
+  },
+  "Customer & Account Leadership": {
+    "aliases": [
+      "Customer & Account Leadership",
+      "Strategic Account Management",
+      "Sales & Account Leadership",
+      "Strategic Account Leadership",
+      "Client & Account Leadership",
+      "Client Partnership & Account Leadership",
+      "Customer & Solution Leadership",
+      "Customer & Market Leadership",
+      "Customer & Client Partnership Leadership"
+    ],
+    "summary": "The capacity to lead customer and account relationships, manage strategic accounts, and drive customer-focused outcomes."
+  },
+  "Customer Partnership & Relationship Excellence": {
+    "aliases": [
+      "Customer Partnership & Relationship Excellence",
+      "Customer Partnership & Engagement",
+      "Customer Partnership & Value Delivery",
+      "Customer Success & Growth",
+      "Customer Guidance & Support Excellence",
+      "Client Partnership & Advocacy",
+      "Partner & Customer Ownership",
+      "Partnership & Client Ownership"
+    ],
+    "summary": "The ability to build strong customer partnerships, deliver value, and support customer success and growth."
+  },
+  "Sales & Customer Impact": {
+    "aliases": [
+      "Sales & Customer Impact",
+      "Sales Execution & Competitive Win",
+      "Sales Enablement & Support",
+      "Sales Enablement & Relationship Impact"
+    ],
+    "summary": "The capacity to drive sales execution, enable teams, and create measurable customer impact."
+  },
+  "Strategic Relationship & Partnership Management": {
+    "aliases": [
+      "Strategic Relationship & Partnership Management",
+      "Strategic Partnership & Influence",
+      "Partnership & Relationship Development",
+      "Partnership & Enablement Excellence",
+      "Relationship Building & Trust",
+      "Relationship & Partnership Building",
+      "Strategic Relationship Building",
+      "Executive Relationship & Influence"
+    ],
+    "summary": "The ability to build and manage strategic relationships, develop partnerships, and establish trust with key stakeholders."
+  },
+  "Negotiation & Deal Leadership": {
+    "aliases": [
+      "Complex Negotiation & Problem Resolution",
+      "Complex Negotiation & Contracting",
+      "Complex Negotiation & Deal Leadership",
+      "Negotiation & Complex Deal Leadership",
+      "Negotiation & Deal Strategy",
+      "Complex Deal Leadership"
+    ],
+    "summary": "The capacity to navigate complex negotiations, structure deals, and resolve conflicts effectively."
+  },
+  "Strategic Marketing & Growth": {
+    "aliases": [
+      "Strategic Marketing & Growth"
+    ],
+    "summary": "The ability to develop and execute marketing strategies that drive business growth and market presence."
+  },
+  "Innovation & Strategic Thinking": {
+    "aliases": [
+      "Innovation & Strategic Thinking",
+      "Innovation & Optimization",
+      "Innovation & Creative Leadership",
+      "Data-Driven Strategy & Innovation"
+    ],
+    "summary": "The capacity to think strategically, drive innovation, and optimize approaches through creative problem-solving."
+  },
+  "Knowledge & Expertise Leadership": {
+    "aliases": [
+      "Knowledge & Expertise Sharing",
+      "Knowledge & Expertise Leadership",
+      "Thought Leadership & Expertise",
+      "Technical & Domain Expertise",
+      "Technical Leadership & Expertise",
+      "Technical Expertise & Knowledge Leadership",
+      "Specialized Expertise & Advisory",
+      "Content & Expertise Leadership"
+    ],
+    "summary": "The ability to develop and share expertise, provide thought leadership, and serve as a trusted advisor in specialized domains."
+  },
+  "Data-Driven Leadership & Strategy": {
+    "aliases": [
+      "Data-Driven Leadership",
+      "Data-Driven Decision Making",
+      "Data-Driven Strategy"
+    ],
+    "summary": "The capacity to leverage data and analytics to inform strategic decisions and drive evidence-based leadership."
+  },
+  "Onboarding & Integration Excellence": {
+    "aliases": [
+      "Onboarding & Integration Excellence"
+    ],
+    "summary": "The ability to effectively onboard and integrate new team members, processes, or systems into the organization."
+  },
+  "Business Advocacy & Influence": {
+    "aliases": [
+      "Business Advocacy & Influence"
+    ],
+    "summary": "The capacity to advocate for business interests and influence outcomes through strategic positioning."
+  },
+  "Trusted Advisor Positioning": {
+    "aliases": [
+      "Trusted Advisor Positioning"
+    ],
+    "summary": "The ability to establish credibility and position oneself as a trusted advisor to key stakeholders."
+  },
+  "Market & Competitive Intelligence": {
+    "aliases": [
+      "Market & Competitive Intelligence"
+    ],
+    "summary": "The capacity to gather, analyze, and leverage market and competitive insights to inform strategy."
+  },
+  "Risk & Compliance Leadership": {
+    "aliases": [
+      "Risk & Compliance Leadership",
+      "Compliance & Certification Leadership"
+    ],
+    "summary": "The ability to manage risk, ensure compliance, and lead certification and governance initiatives."
+  },
+  "Relationship & Conflict Management": {
+    "aliases": [
+      "Relationship & Conflict Management"
+    ],
+    "summary": "The capacity to build and maintain relationships while effectively managing conflicts and tensions."
+  },
+  "Continuous Learning & Growth": {
+    "aliases": [
+      "Continuous Learning & Growth"
+    ],
+    "summary": "The ability to pursue continuous learning, adapt to new information, and support personal and professional growth."
+  },
+  "Resource & Scope Management": {
+    "aliases": [
+      "Resource & Scope Management"
+    ],
+    "summary": "The capacity to manage resources effectively and maintain appropriate project or initiative scope."
+  },
+  "Brand & Experience Leadership": {
+    "aliases": [
+      "Brand & Experience Leadership"
+    ],
+    "summary": "The ability to lead brand initiatives and create compelling customer experiences."
+  },
+  "Event & Experience Leadership": {
+    "aliases": [
+      "Event & Experience Leadership"
+    ],
+    "summary": "The capacity to plan, execute, and lead events and experiences that engage stakeholders."
+  },
+  "UAT & Complex Execution Support": {
+    "aliases": [
+      "UAT & Complex Execution Support"
+    ],
+    "summary": "The ability to support user acceptance testing and manage complex execution scenarios."
+  },
+  "Program & Project Leadership": {
+    "aliases": [
+      "Program & Project Leadership",
+      "Project & Program Leadership",
+      "Strategic Program Execution"
+    ],
+    "summary": "The capacity to lead programs and projects from conception through delivery with effective governance."
+  },
+  "Business Development & Strategy": {
+    "aliases": [
+      "Business Development & Strategy"
+    ],
+    "summary": "The ability to identify and pursue business development opportunities and develop supporting strategies."
+  },
+  "Engagement & Connection": {
+    "aliases": [
+      "Engagement & Connection"
+    ],
+    "summary": "The capacity to build meaningful engagement and foster genuine connections with others."
+  },
+  "Organizational Culture & Impact": {
+    "aliases": [
+      "Organizational Culture & Impact"
+    ],
+    "summary": "The ability to shape organizational culture and drive cultural impact across the organization."
+  },
+  "Organizational Alignment & Coordination": {
+    "aliases": [
+      "Organizational Alignment & Coordination"
+    ],
+    "summary": "The capacity to align organizational efforts and coordinate across functions and levels."
+  },
+  "Strategic Leadership & Vision": {
+    "aliases": [
+      "Strategic Leadership & Vision"
+    ],
+    "summary": "The ability to provide strategic leadership, articulate vision, and guide organizational direction."
+  }
+}

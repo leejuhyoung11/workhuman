@@ -79,6 +79,30 @@ def save_clustering_result(rec_id: int, results, is_vp, folder: str = "output"):
     print(f"[Saved] {save_path}")
     return save_path
 
+def save_clustering_result(rec_id: int, results, is_vp, folder: str = "output"):
+    folder_path = f"{folder}/{is_vp}"
+    os.makedirs(folder_path, exist_ok=True)
+
+    save_path = f"{folder_path}/employee_{rec_id}_clustering_result.json"
+
+    with open(save_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+
+    print(f"[Saved] {save_path}")
+    return save_path
+
+def save_final_result(results, is_vp, folder: str = "output"):
+    folder_path = f"{folder}/{is_vp}"
+    os.makedirs(folder_path, exist_ok=True)
+
+    save_path = f"{folder_path}/pattern_results.json"
+
+    with open(save_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+
+    print(f"[Saved] {save_path}")
+    return save_path
+
 
 def parse_json_from_llm(text):
     clean = (

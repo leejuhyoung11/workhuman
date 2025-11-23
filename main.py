@@ -35,25 +35,27 @@ def setup_global_cluster(provider_name: str):
 def main():
     
     employee_cluster = setup_employee_cluster("anthropic")
+    global_cluster = setup_global_cluster("anthropic")
 
-    print("="*60)
-    print("Data Preprocessing")
-    print("="*60)
-    employee_list = aggregate_employee_data(data_dir="data")
+    # print("="*60)
+    # print("Data Preprocessing")
+    # print("="*60)
+    # employee_list = aggregate_employee_data(data_dir="data")
     
     
 
-    for e in tqdm(employee_list):
-        emp_id, result, is_vp = employee_cluster.extract_raw_signals(e)
-        signal_set = extract_phrase_set(result)
-        employee_cluster.clustering_signal(emp_id, signal_set, is_vp)
+    # for e in tqdm(employee_list[23:]):
+    #     emp_id, result, is_vp = employee_cluster.extract_raw_signals(e)
+    #     signal_set = extract_phrase_set(result)
+    #     employee_cluster.clustering_signal(emp_id, signal_set, is_vp)
 
     
     # Merge Pattern results by vp flag
     non_vp_patterns = merge_signal_set("./output/False")
     vp_patterns = merge_signal_set("./output/True")
 
-    
+    global_cluster.dedupligate_signals(non_vp_patterns, False)
+    global_cluster.dedupligate_signals(vp_patterns, True)
 
 
     

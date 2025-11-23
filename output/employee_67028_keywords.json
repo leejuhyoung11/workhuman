@@ -1,0 +1,610 @@
+{
+  "1": {
+    "1": [
+      "strategic planning leadership",
+      "enterprise capability maturity"
+    ],
+    "2": [
+      "framework adoption",
+      "high-quality delivery"
+    ]
+  },
+  "3": {
+    "1": [
+      "mentorship",
+      "cross-functional leadership"
+    ]
+  },
+  "5": {
+    "1": [
+      "initiative ownership",
+      "process optimization"
+    ],
+    "2": [
+      "strategic requirements definition",
+      "organizational impact"
+    ]
+  },
+  "11": {
+    "1": [
+      "operational excellence leadership",
+      "strategic vision"
+    ],
+    "2": [
+      "cross-functional collaboration",
+      "long-term planning"
+    ]
+  },
+  "12": {
+    "1": [
+      "complex problem-solving",
+      "cross-system alignment"
+    ],
+    "2": [
+      "stakeholder coordination",
+      "organizational foundation-building"
+    ]
+  },
+  "15": {
+    "1": [
+      "leadership",
+      "team empowerment"
+    ],
+    "2": [
+      "mentorship",
+      "strategic guidance"
+    ]
+  },
+  "17": {
+    "1": [
+      "strategic project leadership",
+      "cross-functional execution"
+    ],
+    "2": [
+      "innovation",
+      "resilience"
+    ],
+    "3": [
+      "stakeholder alignment",
+      "partnership building"
+    ]
+  },
+  "26": {
+    "1": [
+      "crisis management",
+      "cross-functional coordination"
+    ],
+    "2": [
+      "communication excellence",
+      "operational resilience"
+    ]
+  },
+  "28": {
+    "1": [
+      "strategic automation",
+      "cross-team collaboration"
+    ],
+    "2": [
+      "innovation leadership",
+      "process transformation"
+    ]
+  },
+  "30": {
+    "1": [
+      "talent acquisition leadership",
+      "strategic hiring"
+    ],
+    "2": [
+      "cross-functional collaboration",
+      "decision-making influence"
+    ]
+  },
+  "31": {
+    "1": [
+      "strategic communication",
+      "organizational alignment"
+    ],
+    "2": [
+      "leadership engagement",
+      "site leadership"
+    ]
+  },
+  "34": {
+    "1": [
+      "stakeholder influence",
+      "technical expertise"
+    ],
+    "2": [
+      "executive alignment",
+      "complex problem-solving"
+    ]
+  },
+  "37": {
+    "1": [
+      "program leadership",
+      "client relationship management"
+    ],
+    "2": [
+      "cross-functional coordination",
+      "change management"
+    ],
+    "3": [
+      "strategic execution",
+      "stakeholder alignment"
+    ]
+  },
+  "39": {
+    "1": [
+      "strategic partnership",
+      "long-term collaboration"
+    ],
+    "2": [
+      "process automation leadership",
+      "technical guidance"
+    ]
+  },
+  "41": {
+    "1": [
+      "cross-functional leadership",
+      "business alignment"
+    ],
+    "2": [
+      "strategic communication",
+      "organizational coordination"
+    ]
+  },
+  "43": {
+    "1": [
+      "cross-functional collaboration",
+      "business performance"
+    ],
+    "2": [
+      "organizational alignment",
+      "strategic coordination"
+    ]
+  },
+  "49": {
+    "1": [
+      "strategic capability assessment",
+      "organizational planning"
+    ]
+  },
+  "51": {
+    "1": [
+      "strategic initiative ownership",
+      "cross-functional execution"
+    ],
+    "2": [
+      "partnership strengthening",
+      "high-stakes delivery"
+    ]
+  },
+  "55": {
+    "1": [
+      "strategic transformation leadership",
+      "cross-functional engagement"
+    ]
+  },
+  "60": {
+    "1": [
+      "executive presence",
+      "leadership visibility"
+    ]
+  },
+  "62": {
+    "1": [
+      "mentorship",
+      "team development"
+    ],
+    "2": [
+      "cross-functional knowledge",
+      "organizational culture-building"
+    ]
+  },
+  "63": {
+    "1": [
+      "strategic guidance",
+      "team alignment"
+    ],
+    "2": [
+      "meaningful leadership",
+      "organizational connection"
+    ]
+  },
+  "66": {
+    "1": [
+      "strategic planning",
+      "cross-functional coordination"
+    ],
+    "2": [
+      "executive leadership",
+      "organizational scaling"
+    ]
+  },
+  "68": {
+    "1": [
+      "strategic transformation",
+      "cross-functional leadership"
+    ],
+    "2": [
+      "execution excellence",
+      "organizational impact"
+    ]
+  },
+  "75": {
+    "1": [
+      "talent acquisition leadership",
+      "strategic hiring"
+    ],
+    "2": [
+      "cross-functional collaboration",
+      "organizational growth"
+    ]
+  },
+  "78": {
+    "1": [
+      "strategic thinking",
+      "cross-functional leadership"
+    ],
+    "2": [
+      "innovation",
+      "problem-solving"
+    ]
+  },
+  "79": {
+    "1": [
+      "strategic vision",
+      "solution design leadership"
+    ],
+    "2": [
+      "cross-functional collaboration",
+      "change leadership"
+    ]
+  },
+  "80": {
+    "1": [
+      "cross-functional coordination",
+      "business alignment"
+    ],
+    "2": [
+      "strategic decision-making",
+      "organizational performance"
+    ]
+  },
+  "81": {
+    "1": [
+      "talent acquisition leadership",
+      "cross-functional collaboration"
+    ]
+  },
+  "82": {
+    "1": [
+      "executive partnership",
+      "organizational communication"
+    ],
+    "2": [
+      "strategic alignment",
+      "culture leadership"
+    ]
+  },
+  "90": {
+    "1": [
+      "cross-functional leadership",
+      "strategic execution"
+    ],
+    "2": [
+      "organizational coordination",
+      "change management"
+    ]
+  },
+  "99": {
+    "1": [
+      "strategic insight",
+      "executive engagement"
+    ],
+    "2": [
+      "business acumen",
+      "stakeholder communication"
+    ]
+  },
+  "103": {
+    "1": [
+      "strategic leadership",
+      "team empowerment"
+    ],
+    "2": [
+      "complex project leadership",
+      "organizational guidance"
+    ]
+  },
+  "104": {
+    "1": [
+      "cross-functional alignment",
+      "strategic communication"
+    ],
+    "2": [
+      "team coordination",
+      "organizational decision-making"
+    ]
+  },
+  "108": {
+    "1": [
+      "strategic negotiation",
+      "vendor management"
+    ],
+    "2": [
+      "business acumen",
+      "cost optimization"
+    ]
+  },
+  "109": {
+    "1": [
+      "strategic framing",
+      "executive guidance"
+    ],
+    "2": [
+      "organizational prioritization",
+      "stakeholder alignment"
+    ]
+  },
+  "119": {
+    "1": [
+      "talent acquisition leadership",
+      "cross-functional collaboration"
+    ]
+  },
+  "122": {
+    "1": [
+      "talent acquisition leadership",
+      "cross-functional collaboration"
+    ]
+  },
+  "124": {
+    "1": [
+      "strategic partnership",
+      "cross-functional leadership"
+    ],
+    "2": [
+      "complex problem-solving",
+      "organizational scaling"
+    ]
+  },
+  "135": {
+    "1": [
+      "cross-functional partnership",
+      "strategic collaboration"
+    ],
+    "2": [
+      "stakeholder alignment",
+      "business acumen"
+    ]
+  },
+  "137": {
+    "1": [
+      "executive communication",
+      "organizational visibility"
+    ]
+  },
+  "150": {
+    "1": [
+      "strategic partnership",
+      "organizational expansion"
+    ],
+    "2": [
+      "cross-functional execution",
+      "stakeholder alignment"
+    ]
+  },
+  "162": {
+    "1": [
+      "strategic execution",
+      "organizational communication"
+    ]
+  },
+  "163": {
+    "1": [
+      "strategic vision",
+      "cross-functional leadership"
+    ],
+    "2": [
+      "process automation",
+      "organizational transformation"
+    ]
+  },
+  "167": {
+    "1": [
+      "strategic leadership",
+      "organizational guidance"
+    ],
+    "2": [
+      "business acumen",
+      "team development"
+    ]
+  },
+  "174": {
+    "1": [
+      "cross-functional coordination",
+      "organizational execution"
+    ]
+  },
+  "200": {
+    "1": [
+      "strategic project leadership",
+      "organizational planning"
+    ],
+    "2": [
+      "stakeholder alignment",
+      "execution excellence"
+    ]
+  },
+  "203": {
+    "1": [
+      "strategic product ownership",
+      "cross-functional leadership"
+    ],
+    "2": [
+      "organizational impact",
+      "team development"
+    ]
+  },
+  "206": {
+    "1": [
+      "executive communication",
+      "organizational visibility"
+    ]
+  },
+  "225": {
+    "1": [
+      "strategic product ownership",
+      "stakeholder engagement"
+    ],
+    "2": [
+      "organizational vision",
+      "cross-functional collaboration"
+    ]
+  },
+  "226": {
+    "1": [
+      "strategic thought leadership",
+      "cross-functional execution"
+    ],
+    "2": [
+      "organizational impact",
+      "complex problem-solving"
+    ]
+  },
+  "230": {
+    "1": [
+      "strategic communication",
+      "business acumen"
+    ]
+  },
+  "231": {
+    "1": [
+      "strategic product ownership",
+      "cross-functional leadership"
+    ],
+    "2": [
+      "organizational transformation",
+      "team coordination"
+    ]
+  },
+  "237": {
+    "1": [
+      "strategic leadership",
+      "organizational guidance"
+    ],
+    "2": [
+      "business acumen",
+      "team development"
+    ]
+  },
+  "238": {
+    "1": [
+      "strategic initiative leadership",
+      "cross-functional execution"
+    ],
+    "2": [
+      "organizational impact",
+      "complex problem-solving"
+    ]
+  },
+  "248": {
+    "1": [
+      "strategic project leadership",
+      "cross-functional coordination"
+    ],
+    "2": [
+      "organizational execution",
+      "change leadership"
+    ]
+  },
+  "252": {
+    "1": [
+      "strategic product ownership",
+      "team leadership"
+    ]
+  },
+  "253": {
+    "1": [
+      "strategic leadership",
+      "cross-functional problem-solving"
+    ],
+    "2": [
+      "organizational impact",
+      "team development"
+    ]
+  },
+  "254": {
+    "1": [
+      "strategic leadership",
+      "organizational guidance"
+    ],
+    "2": [
+      "team development",
+      "business acumen"
+    ]
+  },
+  "265": {
+    "1": [
+      "strategic initiative leadership",
+      "cross-functional collaboration"
+    ]
+  },
+  "267": {
+    "1": [
+      "strategic leadership",
+      "organizational growth"
+    ],
+    "2": [
+      "team development",
+      "business acumen"
+    ]
+  },
+  "270": {
+    "1": [
+      "cross-functional leadership",
+      "strategic execution"
+    ],
+    "2": [
+      "stakeholder alignment",
+      "organizational responsiveness"
+    ]
+  },
+  "271": {
+    "1": [
+      "strategic preparation",
+      "organizational risk management"
+    ]
+  },
+  "276": {
+    "1": [
+      "strategic leadership",
+      "cross-functional coordination"
+    ],
+    "2": [
+      "organizational performance",
+      "business acumen"
+    ]
+  },
+  "290": {
+    "1": [
+      "cross-functional problem-solving",
+      "stakeholder management"
+    ],
+    "2": [
+      "organizational teamwork",
+      "process improvement"
+    ]
+  },
+  "299": {
+    "1": [
+      "strategic leadership",
+      "cross-functional problem-solving"
+    ],
+    "2": [
+      "organizational impact",
+      "team development"
+    ]
+  }
+}

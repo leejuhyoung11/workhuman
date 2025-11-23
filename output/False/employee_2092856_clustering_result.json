@@ -1,0 +1,156 @@
+{
+  "Stakeholder Leadership": {
+    "phrases": [
+      "stakeholder engagement",
+      "stakeholder responsiveness",
+      "stakeholder coordination",
+      "stakeholder alignment",
+      "stakeholder influence",
+      "stakeholder relationship",
+      "stakeholder network building",
+      "stakeholder availability",
+      "organizational alignment",
+      "executive alignment"
+    ],
+    "description": "The ability to engage, align, and influence diverse stakeholders across organizational boundaries to drive strategic initiatives and organizational priorities."
+  },
+  "Cross-Functional Leadership": {
+    "phrases": [
+      "cross-functional partnership",
+      "cross-functional influence",
+      "cross-functional execution",
+      "cross-functional collaboration",
+      "cross-functional leadership",
+      "cross-functional support",
+      "cross-functional alignment",
+      "cross-functional coordination",
+      "cross-functional enablement",
+      "organizational partnership"
+    ],
+    "description": "The capacity to lead and coordinate across functional silos, breaking down barriers and enabling seamless collaboration to achieve complex organizational goals."
+  },
+  "Strategic Communication & Messaging": {
+    "phrases": [
+      "strategic messaging",
+      "strategic communication",
+      "team communication",
+      "leadership visibility",
+      "leadership transparency",
+      "meeting facilitation",
+      "strategic advisory",
+      "strategic guidance"
+    ],
+    "description": "The skill to communicate strategic direction clearly and transparently across all levels, ensuring alignment and understanding of organizational priorities."
+  },
+  "People Development & Culture": {
+    "phrases": [
+      "culture leadership",
+      "emotional intelligence",
+      "team onboarding",
+      "team building",
+      "leadership development",
+      "team support",
+      "empathetic leadership",
+      "people-first leadership",
+      "team leadership",
+      "team alignment",
+      "team development",
+      "mentorship",
+      "ownership mentorship",
+      "knowledge sharing",
+      "knowledge development",
+      "hiring excellence"
+    ],
+    "description": "The commitment to developing talent, fostering inclusive culture, and building high-performing teams through empathetic leadership and continuous learning."
+  },
+  "Strategic Execution & Ownership": {
+    "phrases": [
+      "process establishment",
+      "execution support",
+      "project leadership",
+      "strategic execution",
+      "execution excellence",
+      "professional execution",
+      "results ownership",
+      "task ownership",
+      "initiative ownership",
+      "operational excellence",
+      "process improvement",
+      "process innovation",
+      "performance optimization",
+      "rapid response",
+      "rapid problem-solving"
+    ],
+    "description": "The drive to own outcomes, execute with excellence, and continuously improve processes to deliver measurable results and operational efficiency."
+  },
+  "Strategic Vision & Planning": {
+    "phrases": [
+      "strategic planning",
+      "strategic thinking",
+      "strategic problem-solving",
+      "strategic decision-making",
+      "strategic focus",
+      "strategic learning",
+      "long-term leadership",
+      "strategic challenge",
+      "strategic leverage",
+      "organizational expertise"
+    ],
+    "description": "The ability to think strategically, anticipate future challenges, and develop comprehensive plans that align with long-term organizational vision."
+  },
+  "Innovation & Growth Leadership": {
+    "phrases": [
+      "continuous innovation",
+      "process innovation",
+      "innovation leadership",
+      "creative leadership",
+      "creative marketing approaches",
+      "creative partnership",
+      "strategic innovation",
+      "growth initiative",
+      "expanded contribution"
+    ],
+    "description": "The capacity to drive innovation, identify new opportunities, and lead creative initiatives that fuel organizational growth and competitive advantage."
+  },
+  "Change & Crisis Leadership": {
+    "phrases": [
+      "change leadership",
+      "crisis leadership",
+      "executive leadership",
+      "organizational leadership"
+    ],
+    "description": "The ability to lead through uncertainty and organizational transformation, maintaining stability and direction during critical or high-stakes situations."
+  },
+  "Business Development & Strategy": {
+    "phrases": [
+      "lead generation excellence",
+      "pipeline development",
+      "strategic vendor management",
+      "strategic partnership",
+      "network leverage",
+      "vendor negotiation",
+      "new lead generation channel",
+      "campaign strategy",
+      "social media strategy",
+      "marketing expertise"
+    ],
+    "description": "The skill to develop business opportunities, build strategic partnerships, and execute go-to-market strategies that drive revenue and market presence."
+  },
+  "Data-Driven Leadership": {
+    "phrases": [
+      "measurement and success focus",
+      "data-driven leadership",
+      "attention to detail",
+      "budget management"
+    ],
+    "description": "The discipline to make decisions based on data and metrics, ensuring accountability and optimizing resource allocation for maximum impact."
+  },
+  "Content & Expertise Leadership": {
+    "phrases": [
+      "content expertise",
+      "event coordination",
+      "event execution"
+    ],
+    "description": "The ability to leverage deep subject matter expertise and execute high-impact initiatives that establish thought leadership and organizational credibility."
+  }
+}
