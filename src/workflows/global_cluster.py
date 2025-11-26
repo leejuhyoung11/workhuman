@@ -33,6 +33,24 @@ class GlobalCluster:
 
         return 
 
+    def generate_difference_taxonomy(self, vp_path, non_vp_path):
+        with open(vp_path, "r", encoding="utf-8") as f:
+            vp = json.load(f)
+        with open(non_vp_path, "r", encoding="utf-8") as f:
+            non_vp = json.load(f)
+
+        prompt = self._build_difference_prompt(vp, non_vp)
+        raw = self.llm.call(prompt)
+        # print(" response:", raw)
+
+        try:
+            parsed_json =  parse_json_from_llm(raw)
+        except Exception as e:
+            print("JSON PARSE ERROR:", e)
+            parsed_json = {}
+
+        
+
 
     def generate_canonical_taxonomy(self, vp_path, non_vp_path):
         with open(vp_path, "r", encoding="utf-8") as f:
@@ -133,6 +151,94 @@ class GlobalCluster:
         ===============================================================
         {signal_list}
             """
+
+
+    def _build_difference_prompt(self, vp, non_vp):
+        return f"""
+        You are given two sets of behavioral cluster names:
+
+        - Group A = treatment group clusters
+        - Group B = control group clusters
+
+        Do NOT assume anything about the groups.
+        Do NOT infer seniority, performance, role level, or importance.
+        Do NOT treat either group as superior or inferior.
+        Both lists must be evaluated equally.
+
+        Your task is to perform a purely semantic comparison and consolidation.
+
+        =====================================================================
+        STEP 1 — Semantic Understanding
+        =====================================================================
+        You must analyze all cluster names from Group A and Group B and determine:
+
+        1. Which clusters express the SAME underlying behavioral concept.
+        2. Which clusters are DISTINCT in meaning.
+        3. Where two names differ in wording but are semantically overlapping.
+
+        Important:
+        - Use SEMANTIC interpretation only, not string matching.
+        - Even if names are different, treat them as equivalent if the meaning aligns.
+        - If two concepts partially overlap, MERGE them.
+        - If uncertain, MERGE rather than split.
+
+        =====================================================================
+        STEP 2 — Build Canonical Competency Categories
+        =====================================================================
+        Using all clusters from BOTH groups:
+
+        Create a unified, deduplicated set of canonical categories.
+
+        For each canonical category:
+        - Choose a clear, general, 2–5 word category name.
+        - Do NOT generate abstract categories beyond what is implied in the data.
+        - Do NOT split a concept into multiple categories.
+
+        Each canonical category must contain:
+        1. "aliases" → all original cluster names (from both groups) that semantically match
+        2. "summary" → a 1–2 sentence explanation of the shared competency meaning
+
+        =====================================================================
+        STEP 3 — Identify semantic group relationships
+        =====================================================================
+        For each canonical category, classify it into:
+
+        - "both_groups": appears semantically in BOTH treatment and control  
+        - "treatment_only": appears ONLY in treatment (no semantic equivalent in control)  
+        - "control_only": appears ONLY in control (no semantic equivalent in treatment)
+
+        Important:
+        - This determination must be SEMANTIC, not based on name overlap.
+        - Two differently worded clusters count as "both_groups" if they express the same idea.
+
+        =====================================================================
+        STEP 4 — Output Format (JSON only)
+        =====================================================================
+        Return a single JSON object in this exact structure:
+
+        {
+        "<canonical_category>": {
+            "aliases": [ ... all original cluster names ... ],
+            "summary": "1–2 sentence meaning summary.",
+            "group_presence": "both_groups" | "treatment_only" | "control_only"
+        },
+        ...
+        }
+
+        NO commentary.  
+        NO markdown.  
+        JSON only.
+
+        =====================================================================
+        NOW ANALYZE THE FOLLOWING:
+        =====================================================================
+
+        Group A (treatment):
+        {vp}
+
+        Group B (control):
+        {non_vp}
+        """
 
     
     
